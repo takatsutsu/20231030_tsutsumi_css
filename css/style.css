@@ -1,18 +1,22 @@
-/*画像のサイズ　画像の位置*/
-.main_picdiv_pic1{
-    width: 600px;
-    height:400px;
-}
-.main_picdiv {
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: 0;
 
+/*画像グループ　位置*/
+.main_picdiv {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+    z-index: 10;
 }
+/*画像サイズ*/
+.main_picdiv_pic1 {
+    width: 650px;
+    height: 300px;
+}
+/*ヘッダ設定１*/
 .header_inner {
     display: flex;
     justify-content: space-between;
 }
+/*ヘッダ左設定*/
 .header_inner_left{
     font-weight: bold;
     text-align: left;
@@ -21,18 +25,24 @@
     color:blue;
     font-size: 30px;
 }
+/*ヘッダ右設定*/
 .header_inner_right{
-
     text-align: right;
     margin-top: 20px;
 }
-
+/*メッセージ毎日を。。。。設定*/
 .main_movingbox_tittle{
-    font-size: 80px;
+    font-size: 50px;
 }
+/*メッセージ下帯設定*/
 .main_movingbox_band{
-    width: 700px;
-    height:100px;
-        background-color: blue;
-
+    width: 800px;
+    height:200px;
+    background-color: blue;
+}
+/*メッセージ　　帯位置*/
+.main_movingbox{
+    position: absolute;
+    top: 300px;
+    z-index: 0;
 }
